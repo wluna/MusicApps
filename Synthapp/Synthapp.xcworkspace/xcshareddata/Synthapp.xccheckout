@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6E9AE87-D745-4CE2-8B73-1F3542CCFAE7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Synthapp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2B04F800400836D56676EE7E4D25B664C4FA4BCC</key>
+		<string>https://github.com/tuftsdev/comp150isw-spring2015-team4.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Synthapp/Synthapp.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2B04F800400836D56676EE7E4D25B664C4FA4BCC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tuftsdev/comp150isw-spring2015-team4.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2B04F800400836D56676EE7E4D25B664C4FA4BCC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2B04F800400836D56676EE7E4D25B664C4FA4BCC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>comp150isw-spring2015-team4</string>
+		</dict>
+	</array>
+</dict>
+</plist>

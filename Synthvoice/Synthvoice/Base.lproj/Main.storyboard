@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="FN0-1h-3oV">
+            <objects>
+                <navigationController id="iP7-vF-Zri" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rTg-6Y-K5m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="179-GS-kep"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNl-Px-p2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="1339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Synthvoice" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="WIX-2b-dRl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="1" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="actualboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="WH7-50-v1I">
+                                <rect key="frame" x="174" y="-97" width="600" height="600"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="84" y="68" width="600" height="600"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="122" y="1" width="780" height="765"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="48" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zoh-Ke-EER" userLabel="C4" customClass="NoteButton" customModule="Synthvoice">
+                                <rect key="frame" x="369" y="542" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="369" y="488" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="492" y="536" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="50" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eh5-Pe-r29" userLabel="D4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="310" y="469" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="310" y="415" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="415" y="444" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="52" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdT-KN-sw4" userLabel="E4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="369" y="429" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="369" y="375" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="491" y="389" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="53" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmC-bT-d7U" userLabel="F4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="426" y="469" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="426" y="415" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="567" y="444" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="55" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATX-bx-25i" userLabel="G4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="560" y="547" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="560" y="493" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="742" y="542" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="57" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBo-nn-sEb" userLabel="A4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="369" y="645" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="369" y="591" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="491" y="665" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="59" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ai-ad-oTP" userLabel="B4" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="167" y="547" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="169" y="493" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="232" y="541" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5O-ni-6cO" userLabel="C5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="249" y="336" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="249" y="282" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="336" y="275" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="62" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owt-1e-sWo" userLabel="D5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="281" y="427" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="281" y="373" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="377" y="389" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8o-n8-jwn" userLabel="E5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="153" y="512" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="153" y="458" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="211" y="497" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="65" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNk-by-mvD" userLabel="F5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="162" y="286" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="162" y="232" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="222" y="209" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pj7-FA-Amy" userLabel="G5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="348" y="169" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="348" y="115" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="465" y="61" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="69" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY1-aS-PSW" userLabel="A5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="342" y="321" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="342" y="267" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="456" y="254" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="71" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yb6-wq-EH1" userLabel="B5" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="350" y="395" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="350" y="341" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="467" y="350" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="72" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zPX-i5-VQ6" userLabel="C6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="489" y="337" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="C">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="489" y="283" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="647" y="275" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="74" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ci-1z-CzY" userLabel="D6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="577" y="285" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="D">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="577" y="232" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="761" y="210" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="76" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDE-Gq-KMT" userLabel="E6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="580" y="511" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="E">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="580" y="457" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="766" y="496" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="77" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F8-Rd-3w2" userLabel="F6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="456" y="424" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="F">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="456" y="370" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="604" y="386" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="79" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIu-wg-x3o" userLabel="G6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="387" y="395" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="G">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="387" y="341" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="515" y="349" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="81" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-Rw-UbE" userLabel="A6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="395" y="317" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="A">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="395" y="265" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="526" y="252" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" userInteractionEnabled="NO" tag="83" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dm-uW-TC1" userLabel="B6" customClass="NoteButton" customModule="Synthvoice" customModuleProvider="target">
+                                <rect key="frame" x="387" y="169" width="30" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <state key="normal" title="B">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="390" y="115" width="30" height="30"/>
+                                </variation>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="518" y="61" width="40" height="40"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsd-Xh-q7h" userLabel="B key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="897" y="9" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HvC-Wt-9Pa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ij2-CG-tUw" userLabel="A key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="897" y="135" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3z-Up-A47"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btZ-wi-9kF" userLabel="G key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="898" y="261" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="50R-a4-02z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoU-PV-zSQ" userLabel="F key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="898" y="386" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OTM-40-8LJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knv-qy-Llh" userLabel="E key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="898" y="449" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TB-8A-36M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9O-VK-uvF" userLabel="D key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="898" y="575" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gtb-8J-k83"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MG7-n8-gqq" userLabel="C key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="898" y="700" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changeRoot:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ei-m6-XlG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Volume" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kgu-hI-Jif">
+                                <rect key="frame" x="661" y="20" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qrC-jM-HiL">
+                                <rect key="frame" x="659" y="51" width="101" height="31"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.92419929318124261" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="659" y="51" width="102" height="31"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="659" y="51" width="102" height="31"/>
+                                </variation>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qw6-M6-ARn">
+                                <rect key="frame" x="54" y="20" width="52" height="30"/>
+                                <state key="normal" title="Sustain">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="20" width="52" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sustainAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tP-Ge-QrU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTg-dm-q7w">
+                                <rect key="frame" x="57" y="58" width="45" height="30"/>
+                                <state key="normal" title="Drums">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="58" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="drumsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4n-hD-Wdu"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="250" minValue="50" maxValue="500" translatesAutoresizingMaskIntoConstraints="NO" id="HhO-4Q-sUH">
+                                <rect key="frame" x="21" y="96" width="118" height="31"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="21" y="96" width="118" height="31"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="14" y="96" width="118" height="31"/>
+                                </variation>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instruments" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5H-QU-wRu">
+                                <rect key="frame" x="34" y="152" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="691" width="92" height="22"/>
+                                </variation>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="c35-ER-xs5">
+                                <rect key="frame" x="21" y="188" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="727" width="118" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="instrument:" destination="BYZ-38-t0r" eventType="valueChanged" id="lWe-tz-M7W"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etS-1c-Uim">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="To minor">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="795" y="714" width="59" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="38" y="630" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toMinor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lk4-Lq-MqR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WIX-2b-dRl"/>
+                                <exclude reference="Fsd-Xh-q7h"/>
+                                <exclude reference="Ij2-CG-tUw"/>
+                                <exclude reference="btZ-wi-9kF"/>
+                                <exclude reference="PoU-PV-zSQ"/>
+                                <exclude reference="Knv-qy-Llh"/>
+                                <exclude reference="p9O-VK-uvF"/>
+                                <exclude reference="MG7-n8-gqq"/>
+                                <exclude reference="etS-1c-Uim"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="WIX-2b-dRl"/>
+                                <include reference="Fsd-Xh-q7h"/>
+                                <include reference="Ij2-CG-tUw"/>
+                                <include reference="btZ-wi-9kF"/>
+                                <include reference="PoU-PV-zSQ"/>
+                                <include reference="Knv-qy-Llh"/>
+                                <include reference="p9O-VK-uvF"/>
+                                <include reference="MG7-n8-gqq"/>
+                                <include reference="etS-1c-Uim"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Nby-o3-YPl"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="boardView" destination="8bC-Xf-vdC" id="eA6-YG-gB5"/>
+                        <outlet property="drums" destination="WTg-dm-q7w" id="obz-51-icv"/>
+                        <outlet property="sustain" destination="Qw6-M6-ARn" id="VnK-Ta-Pc3"/>
+                        <outletCollection property="buttons" destination="Zoh-Ke-EER" collectionClass="NSMutableArray" id="mLA-57-5nW"/>
+                        <outletCollection property="buttons" destination="eh5-Pe-r29" collectionClass="NSMutableArray" id="rwO-xc-Wg3"/>
+                        <outletCollection property="buttons" destination="PdT-KN-sw4" collectionClass="NSMutableArray" id="Hhb-hu-s4C"/>
+                        <outletCollection property="buttons" destination="CmC-bT-d7U" collectionClass="NSMutableArray" id="nUF-Np-BRs"/>
+                        <outletCollection property="buttons" destination="ATX-bx-25i" collectionClass="NSMutableArray" id="Kj0-qc-EGR"/>
+                        <outletCollection property="buttons" destination="lBo-nn-sEb" collectionClass="NSMutableArray" id="KpP-44-IhS"/>
+                        <outletCollection property="buttons" destination="7ai-ad-oTP" collectionClass="NSMutableArray" id="q78-Tn-KaO"/>
+                        <outletCollection property="buttons" destination="r5O-ni-6cO" collectionClass="NSMutableArray" id="RYR-nr-bOQ"/>
+                        <outletCollection property="buttons" destination="owt-1e-sWo" collectionClass="NSMutableArray" id="Xwj-Dt-gyI"/>
+                        <outletCollection property="buttons" destination="s8o-n8-jwn" collectionClass="NSMutableArray" id="aLZ-EN-e8L"/>
+                        <outletCollection property="buttons" destination="KNk-by-mvD" collectionClass="NSMutableArray" id="XaG-N4-1CH"/>
+                        <outletCollection property="buttons" destination="pj7-FA-Amy" collectionClass="NSMutableArray" id="Xwy-XC-THq"/>
+                        <outletCollection property="buttons" destination="WY1-aS-PSW" collectionClass="NSMutableArray" id="YaI-bE-l1l"/>
+                        <outletCollection property="buttons" destination="yb6-wq-EH1" collectionClass="NSMutableArray" id="C72-Ul-hz6"/>
+                        <outletCollection property="buttons" destination="zPX-i5-VQ6" collectionClass="NSMutableArray" id="nrH-33-gJd"/>
+                        <outletCollection property="buttons" destination="2Ci-1z-CzY" collectionClass="NSMutableArray" id="tTI-Xw-GHX"/>
+                        <outletCollection property="buttons" destination="LDE-Gq-KMT" collectionClass="NSMutableArray" id="mka-uS-Am0"/>
+                        <outletCollection property="buttons" destination="4F8-Rd-3w2" collectionClass="NSMutableArray" id="j7o-40-oWo"/>
+                        <outletCollection property="buttons" destination="IIu-wg-x3o" collectionClass="NSMutableArray" id="3zE-yG-Xhh"/>
+                        <outletCollection property="buttons" destination="8Uw-Rw-UbE" collectionClass="NSMutableArray" id="w9J-uG-gVO"/>
+                        <outletCollection property="buttons" destination="9dm-uW-TC1" collectionClass="NSMutableArray" id="V9U-Q3-Le0"/>
+                        <segue destination="U4t-NH-8vg" kind="show" identifier="RightSegue" id="VG6-Hn-M2k"/>
+                        <segue destination="LB7-gQ-5WH" kind="show" identifier="LeftSegue" id="U8x-4V-psG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="203"/>
+        </scene>
+        <!--Help View Controller-->
+        <scene sceneID="H1p-K9-QFD">
+            <objects>
+                <viewController id="U4t-NH-8vg" customClass="HelpViewController" customModule="Synthvoice" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YsX-0B-Fbe"/>
+                        <viewControllerLayoutGuide type="bottom" id="7fD-zV-6ih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDh-Os-8u5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTo-ty-85n" userLabel="Piano">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Piano">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="320" y="120" width="105" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQt-QH-egc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Analog Age">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="285" y="202" width="257" height="74"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Yo-Pi-kBW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Bolivian Flute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="325" y="50" width="217" height="82"/>
+                                </variation>
+                                <connections>
+                                    <action selector="pianoPress:" destination="U4t-NH-8vg" eventType="touchUpInside" id="wSj-OD-Mhy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIw-Cm-eI9">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Beautiful Pad">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="308" y="284" width="234" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFi-e0-vxq">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Church Organ">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="313" y="344" width="259" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyc-ce-gGy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Mellotron Flute">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="326" y="158" width="233" height="53"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBb-WN-ylF">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="Banjo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="285" y="391" width="186" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jTo-ty-85n"/>
+                                <exclude reference="pQt-QH-egc"/>
+                                <exclude reference="4Yo-Pi-kBW"/>
+                                <exclude reference="RIw-Cm-eI9"/>
+                                <exclude reference="uFi-e0-vxq"/>
+                                <exclude reference="yyc-ce-gGy"/>
+                                <exclude reference="tBb-WN-ylF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="jTo-ty-85n"/>
+                                <include reference="pQt-QH-egc"/>
+                                <include reference="4Yo-Pi-kBW"/>
+                                <include reference="RIw-Cm-eI9"/>
+                                <include reference="uFi-e0-vxq"/>
+                                <include reference="yyc-ce-gGy"/>
+                                <include reference="tBb-WN-ylF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="age" destination="pQt-QH-egc" id="h2v-AU-BHj"/>
+                        <outlet property="bFlute" destination="4Yo-Pi-kBW" id="udw-xc-lWt"/>
+                        <outlet property="banjo" destination="tBb-WN-ylF" id="Ebg-ua-rhX"/>
+                        <outlet property="mFlute" destination="yyc-ce-gGy" id="LTW-Dp-o4c"/>
+                        <outlet property="organ" destination="uFi-e0-vxq" id="nVN-zK-WuC"/>
+                        <outlet property="pad" destination="RIw-Cm-eI9" id="rgV-9A-cWW"/>
+                        <outlet property="piano" destination="jTo-ty-85n" id="cOq-L6-zxW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="LeftSegue" id="xor-N5-ujh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z6p-0u-RyE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1215.75" y="79.5"/>
+        </scene>
+        <!--Chord View Controller-->
+        <scene sceneID="1UU-4f-XoG">
+            <objects>
+                <viewController id="LB7-gQ-5WH" customClass="ChordViewController" customModule="Synthvoice" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eYU-bs-9Bw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Syl-lc-r1g"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qV1-wL-ne3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chordboard.png" translatesAutoresizingMaskIntoConstraints="NO" id="FWb-4U-Maj">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                </variation>
+                            </imageView>
+                            <view opaque="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wbm-Am-0l7" userLabel="1st Chord">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="127" y="0.0" width="223" height="768"/>
+                                </variation>
+                            </view>
+                            <view opaque="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iub-6y-kmc" userLabel="2nd Chord">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="352" y="0.0" width="223" height="768"/>
+                                </variation>
+                            </view>
+                            <view opaque="NO" tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyC-V5-rz8" userLabel="3rd Chord">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="576" y="0.0" width="223" height="768"/>
+                                </variation>
+                            </view>
+                            <button opaque="NO" tag="59" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMN-rZ-RXR" userLabel="B key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="3" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="Pkd-aR-7Or"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="57" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-Oq-Rqc" userLabel="A key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="131" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="1dV-I0-qx7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="55" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d05-Lm-QpM" userLabel="G key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="259" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="GNc-49-n4L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="53" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T19-Rw-0Is" userLabel="F key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="387" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="G6Q-MU-Y5d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="52" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1A-QA-zt4" userLabel="E key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="451" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="SGe-Rf-Vgt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="50" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAM-sH-CLd" userLabel="D key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="579" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="Rmh-Q1-tgu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="48" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65J-VP-4SI" userLabel="C key">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="708" width="125" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="addChord:" destination="LB7-gQ-5WH" eventType="touchUpInside" id="FTn-Nx-2Jj"/>
+                                </connections>
+                            </button>
+                            <view opaque="NO" tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5nn-4Q-90J" userLabel="4th Chord">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="800" y="0.0" width="223" height="768"/>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FWb-4U-Maj"/>
+                                <exclude reference="Wbm-Am-0l7"/>
+                                <exclude reference="iub-6y-kmc"/>
+                                <exclude reference="pyC-V5-rz8"/>
+                                <exclude reference="pMN-rZ-RXR"/>
+                                <exclude reference="NGC-Oq-Rqc"/>
+                                <exclude reference="d05-Lm-QpM"/>
+                                <exclude reference="T19-Rw-0Is"/>
+                                <exclude reference="r1A-QA-zt4"/>
+                                <exclude reference="QAM-sH-CLd"/>
+                                <exclude reference="65J-VP-4SI"/>
+                                <exclude reference="5nn-4Q-90J"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="FWb-4U-Maj"/>
+                                <include reference="Wbm-Am-0l7"/>
+                                <include reference="iub-6y-kmc"/>
+                                <include reference="pyC-V5-rz8"/>
+                                <include reference="pMN-rZ-RXR"/>
+                                <include reference="NGC-Oq-Rqc"/>
+                                <include reference="d05-Lm-QpM"/>
+                                <include reference="T19-Rw-0Is"/>
+                                <include reference="r1A-QA-zt4"/>
+                                <include reference="QAM-sH-CLd"/>
+                                <include reference="65J-VP-4SI"/>
+                                <include reference="5nn-4Q-90J"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outletCollection property="chordRegions" destination="Wbm-Am-0l7" collectionClass="NSMutableArray" id="Cq6-YU-Nol"/>
+                        <outletCollection property="chordRegions" destination="pyC-V5-rz8" collectionClass="NSMutableArray" id="XUe-H9-ejn"/>
+                        <outletCollection property="chordRegions" destination="5nn-4Q-90J" collectionClass="NSMutableArray" id="RGf-8l-ndN"/>
+                        <outletCollection property="chordRegions" destination="iub-6y-kmc" collectionClass="NSMutableArray" id="cgB-ju-tMR"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="RightSegue" id="YKs-4X-vG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nYJ-Ru-wrF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1222.5" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="actualboard.png" width="1024" height="1024"/>
+        <image name="appboard.png" width="2048" height="1536"/>
+        <image name="chordboard.png" width="2048" height="1536"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xor-N5-ujh"/>
+    </inferredMetricsTieBreakers>
+</document>

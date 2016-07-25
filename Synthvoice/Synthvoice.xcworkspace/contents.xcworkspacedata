@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:chh.aif">
+   </FileRef>
+   <FileRef
+      location = "group:clap.aif">
+   </FileRef>
+   <FileRef
+      location = "group:crash.aif">
+   </FileRef>
+   <FileRef
+      location = "group:kick.aif">
+   </FileRef>
+   <FileRef
+      location = "group:ohh.aif">
+   </FileRef>
+   <FileRef
+      location = "group:snare.aif">
+   </FileRef>
+   <FileRef
+      location = "group:tom.aif">
+   </FileRef>
+   <FileRef
+      location = "group:Synthvoice.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
